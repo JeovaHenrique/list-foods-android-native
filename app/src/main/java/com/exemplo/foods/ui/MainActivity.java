@@ -11,6 +11,7 @@ import com.exemplo.foods.OnListClick;
 import com.exemplo.foods.R;
 import com.exemplo.foods.adapter.FoodAdapter;
 import com.exemplo.foods.business.FoodBusiness;
+import com.exemplo.foods.constants.FoodConstants;
 import com.exemplo.foods.entity.FoodEntity;
 import com.exemplo.foods.repository.FoodRepository;
 
@@ -33,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
         OnListClick clickFood = new OnListClick() {
             @Override
             public void onclick(int id) {
+
+                Bundle bundle = new Bundle();
+                bundle.putInt(FoodConstants.FOOD_ID, id);
                Intent intent = new Intent(getApplicationContext(), DetailsActivity.class);
+               intent.putExtras(bundle);
                startActivity(intent);
             }
         };
