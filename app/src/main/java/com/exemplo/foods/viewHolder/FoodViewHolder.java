@@ -6,6 +6,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.exemplo.foods.OnListClick;
 import com.exemplo.foods.R;
 import com.exemplo.foods.entity.FoodEntity;
 
@@ -17,12 +18,19 @@ public class FoodViewHolder extends RecyclerView.ViewHolder {
     public FoodViewHolder(@NonNull View itemView) {
         super(itemView);
 
-        name = itemView.findViewById(R.id.text_name);
-        calorie = itemView.findViewById(R.id.text_calories);
+        this.name = itemView.findViewById(R.id.text_name);
+        this.calorie = itemView.findViewById(R.id.text_calories);
     }
 
-    public void bind(FoodEntity Food) {
+    public void bind(FoodEntity Food, final OnListClick listener) {
         name.setText(Food.getName());
         calorie.setText(String.valueOf(Food.getCalories()));
+
+        this.name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onclick(Food.getId());
+            }
+        });
     }
 }
