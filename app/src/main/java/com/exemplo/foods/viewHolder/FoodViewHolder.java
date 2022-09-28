@@ -26,11 +26,6 @@ public class FoodViewHolder extends RecyclerView.ViewHolder {
         name.setText(Food.getName());
         calorie.setText(String.valueOf(Food.getCalories()));
 
-        this.name.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.onclick(Food.getId());
-            }
-        });
+        this.name.setOnClickListener(v -> listener.onclick(Food.getId()));
     }
 }
