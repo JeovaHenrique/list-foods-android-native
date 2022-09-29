@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">foods</string>
+    <string name="calories">Calories</string>
+    <string name="food">Food</string>
+    <string name="quantity">Qnt</string>
+    <string name="unit">unt</string>
+    <string name="portion">Portion size</string>
+    <string name="value_calorie">num</string>
+    <string name="information">Information</string>
+    <string name="description">No extra description to be shown</string>
     <string name="low_calorie">Low Calorie</string>
     <string name="medium_calorie">Medium Calorie</string>
     <string name="high_calorie">High Calorie</string>

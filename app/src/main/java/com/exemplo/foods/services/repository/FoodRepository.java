@@ -1,6 +1,6 @@
-package com.exemplo.foods.repository;
+package com.exemplo.foods.services.repository;
 
-import com.exemplo.foods.entity.FoodEntity;
+import com.exemplo.foods.entities.FoodEntity;
 
 import java.util.ArrayList;
 import java.util.List;

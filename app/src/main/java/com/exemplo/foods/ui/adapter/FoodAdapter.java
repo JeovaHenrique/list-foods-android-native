@@ -1,4 +1,4 @@
-package com.exemplo.foods.adapter;
+package com.exemplo.foods.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.exemplo.foods.OnListClick;
+import com.exemplo.foods.services.listener.OnListClick;
 import com.exemplo.foods.R;
-import com.exemplo.foods.entity.FoodEntity;
-import com.exemplo.foods.viewHolder.FoodViewHolder;
+import com.exemplo.foods.entities.FoodEntity;
+import com.exemplo.foods.ui.viewHolder.FoodViewHolder;
 
 import java.util.List;
 

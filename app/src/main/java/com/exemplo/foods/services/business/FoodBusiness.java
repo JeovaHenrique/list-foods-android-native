@@ -1,8 +1,8 @@
-package com.exemplo.foods.business;
+package com.exemplo.foods.services.business;
 
-import com.exemplo.foods.constants.FoodConstants;
-import com.exemplo.foods.entity.FoodEntity;
-import com.exemplo.foods.repository.FoodRepository;
+import com.exemplo.foods.services.constants.FoodConstants;
+import com.exemplo.foods.entities.FoodEntity;
+import com.exemplo.foods.services.repository.FoodRepository;
 
 import java.util.ArrayList;
 import java.util.List;

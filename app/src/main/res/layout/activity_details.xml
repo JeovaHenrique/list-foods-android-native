@@ -10,7 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Food"
+        android:textSize="24dp"
+        android:text="@string/food"
         android:layout_centerHorizontal="true"/>
 
     <View
@@ -27,7 +28,7 @@
         android:layout_below="@+id/view_name"
         android:layout_alignParentStart="true"
         android:padding="16dp"
-        android:text="Portion size" />
+        android:text="@string/portion" />
 
     <TextView
         android:id="@+id/text_qnt"
@@ -35,8 +36,10 @@
         android:layout_toStartOf="@+id/text_unt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Qnt"
-        android:padding="8dp"/>
+        android:text="@string/quantity"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+   />
 
     <TextView
         android:id="@+id/text_unt"
@@ -44,8 +47,11 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="un"
-        android:padding="8dp"/>
+        android:text="@string/unit"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="16dp"/>
 
     <View
         android:id="@+id/view_portion"
@@ -61,7 +67,7 @@
         android:layout_below="@+id/view_portion"
         android:layout_alignParentStart="true"
         android:padding="16dp"
-        android:text="Calorie" />
+        android:text="@string/calories" />
 
     <TextView
         android:id="@+id/text_valueCalorie"
@@ -70,7 +76,7 @@
         android:layout_below="@+id/view_portion"
         android:layout_alignParentEnd="true"
         android:padding="16dp"
-        android:text="90" />
+        android:text="@string/value_calorie" />
 
     <View
         android:id="@+id/view_calorie"
@@ -86,7 +92,7 @@
         android:layout_below="@+id/view_calorie"
         android:layout_alignParentStart="true"
         android:padding="16dp"
-        android:text="information" />
+        android:text="@string/information" />
 
     <TextView
         android:id="@+id/showDescription"
@@ -95,6 +101,6 @@
         android:layout_below="@id/text_information"
         android:layout_alignParentStart="true"
         android:padding="16dp"
-        android:text="no extra description to be shown" />
+        android:text="@string/description" />
 
 </RelativeLayout>

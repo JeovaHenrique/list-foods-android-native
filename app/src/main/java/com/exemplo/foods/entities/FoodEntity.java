@@ -1,4 +1,4 @@
-package com.exemplo.foods.entity;
+package com.exemplo.foods.entities;
 
 public class FoodEntity {
 

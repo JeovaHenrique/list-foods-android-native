@@ -11,15 +11,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.exemplo.foods.OnListClick;
+import com.exemplo.foods.services.listener.OnListClick;
 import com.exemplo.foods.R;
-import com.exemplo.foods.adapter.FoodAdapter;
-import com.exemplo.foods.business.FoodBusiness;
-import com.exemplo.foods.constants.FoodConstants;
-import com.exemplo.foods.entity.FoodEntity;
-import com.exemplo.foods.repository.FoodRepository;
+import com.exemplo.foods.ui.adapter.FoodAdapter;
+import com.exemplo.foods.services.business.FoodBusiness;
+import com.exemplo.foods.services.constants.FoodConstants;
+import com.exemplo.foods.entities.FoodEntity;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
